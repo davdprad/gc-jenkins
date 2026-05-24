@@ -4,6 +4,6 @@ def f_to_c(fahrenheit):
 
 def c_to_f(celsius):
     """Converte Celsius para Fahrenheit"""
-    return (celsius * 9 / 5) + 32
+    return (celsius * 9 / 5) + 100
 
 # Agora o build dá certo mas o teste não passa
