@@ -27,10 +27,7 @@ pipeline {
     post {
         always {
             junit 'result.xml'
-
-            publishCoverage(adapters: [
-                istanbulCoBERTuraAdapter(path: 'coverage.xml')
-            ])
+            recordCoverage(tools: [[parser: 'COBERTURA', pattern: 'coverage.xml']])
         }
     }
 }
